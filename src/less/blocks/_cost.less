@@ -1,0 +1,170 @@
+.cost {
+	background-color: @blue;
+	padding-top: 60px;
+
+
+	h2 {
+		padding-bottom: 10px;
+		border-bottom: 1px solid #fff;
+		max-width: 800px;
+		text-align: left;
+		padding-left: 30px;
+		.m-auto;
+		margin-bottom: 20px;
+	}
+}
+
+.cost-content {
+	@media(max-width:767px) {
+		max-width: 450px;
+		.m-auto;
+	}
+}
+
+.cost-price {
+	font-family: @custom;
+	max-width: 400px;
+	padding: 30px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border: 3px dashed #fff;
+	border-radius: 10px;
+
+	h3 {
+		font-size: 30px;
+		font-weight: 700;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #fff;
+
+		@media(max-width: 991px) {
+			font-size: 24px;
+		}
+	}
+
+	ul {
+		padding-top: 20px;
+		font-size: 19px;
+		list-style-type: disc;
+		margin-left: 20px;
+
+		@media(max-width: 991px) {
+			font-size: 18px;
+		}
+	}
+
+	li {
+		margin-bottom: 10px;
+	}
+
+	@media(max-width: 767px) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+.price-block {
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+
+	.price-title {
+		font-size: 26px;
+		font-weight: 500;
+
+		@media(max-width: 991px) {
+			font-size: 24px;
+		}
+	}
+
+	.new-price {
+		margin-left: auto;
+		font-size: 30px;
+		font-style: italic;
+		font-weight: 700;
+		position: relative;
+		top: -10px;
+
+		@media(max-width: 991px) {
+			font-size: 24px;
+		}
+	}
+
+	.old-price {
+		font-size: 30px;
+		position: relative;
+		top: -10px;
+
+		@media(max-width: 991px) {
+			font-size: 24px;
+		}
+	}
+
+	.old-price:after {
+		content: '';
+		position: absolute;
+		height: 6px;
+		width: 161px;
+		left: -5px;
+		top: 10px;
+		background-color: rgba(232, 74, 67, 0.72);
+		-webkit-transform: rotate(-10deg);
+		-ms-transform: rotate(-10deg);
+		transform: rotate(-10deg);
+
+		@media(max-width: 991px) {
+			width: 130px;
+			;
+		}
+	}
+
+
+}
+
+.cost-sale {
+	max-width: 340px;
+	width: 100%;
+	padding-top: 20px;
+	height: 235px;
+	background-color: rgba(232, 74, 67, 1);
+	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	p {
+		font-size: 22px;
+		line-height: 1.4;
+		font-weight: 700;
+		max-width: 250px;
+		margin-bottom: 15px;
+	}
+
+	@media(max-width: 767px) {
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+}
+
+.cost-info {
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	@media(max-width: 767px) {
+		margin-top: 40px;
+
+	}
+
+
+}
+
+.post-scriptum {
+	width: 280px;
+}

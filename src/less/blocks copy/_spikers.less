@@ -1,0 +1,149 @@
+.spikers {
+
+	padding-bottom: 40px;
+	background-color: @blue;
+}
+
+.spikers-content {
+	width: 95%;
+	max-width: 980px;
+	background-color: @red;
+	padding-bottom: 60px;
+	.m-auto;
+
+	h2 {
+		padding-bottom: 10px;
+		border-bottom: 1px solid #fff;
+		max-width: 780px;
+		text-align: left;
+		margin-left: 50px;
+
+	}
+
+}
+
+.spikers-block {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.spikers-card {
+	text-align: center;
+	width: 265px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 580px;
+	position: relative;
+	margin-bottom: 35px;
+
+	@media(max-width: 991px) {
+		height: 520px;
+	}
+
+	.card-text {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	h4 {
+		font-size: 28px;
+		font-weight: 700;
+		margin-bottom: 5px;
+		font-family: @custom;
+		min-height: 60px;
+		position: relative;
+
+		.social-link {
+			display: inline-block;
+			top: -70px;
+			right: -15px;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			.tr;
+			background-color: #fff;
+			color: @red;
+			font-size: 22px;
+			font-weight: 700;
+			z-index: 5;
+			position: absolute;
+			line-height: 40px;
+
+			&:after {
+				display: none;
+			}
+
+			&:hover {
+				background-color: @btnBg;
+				color: #fff;
+			}
+
+			@media(max-width:1199px) {
+				right: 0;
+			}
+		}
+	}
+
+	a {
+		color: #fff;
+		font-size: 18px;
+		margin-bottom: 10px;
+		display: inline-block;
+		position: relative;
+		.tr;
+	}
+
+	a:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -2px;
+		height: 1px;
+		background-color: #fff;
+		width: 100%;
+		.tr;
+	}
+
+	a:hover:after {
+		width: 0;
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 1.2;
+	}
+
+	.blue-btn {
+		min-width: 180px;
+	}
+
+}
+
+.card-button {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.card-img {
+	width: 265px;
+	height: 265px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-bottom: 30px;
+
+	@media(max-width:991px) {
+		width: 200px;
+		height: 200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	img {
+		object-fit: cover;
+	}
+}

@@ -1,0 +1,31 @@
+mixin spikerCard(imgSrc, title, linkText, text)
+	.spikers-card
+		.card-content
+			.card-img
+				img(src="img/"+ imgSrc +".webp", alt="spiker")
+				
+			.card-text
+				
+				h4 #{title}
+					a(href="#").social-link in
+				a(href="#") !{linkText}
+				.desk
+					p !{text}
+				.card-button
+					button.blue-btn Подробнее
+
+section.spikers
+	.spikers-content
+		h2.section-title Спикеры
+		.spikers-block
+			+spikerCard('spiker1', 'Питер Никсон', 'Potential Dialogue Institute', 'Бизнес консультант. Клиенты: Amazon,&nbsp;Procter&nbsp;&&nbsp;Gamble, Marriott, PWC, Caterpillar тд')
+			+spikerCard('spiker2', 'Линн Раебсамен', 'Swiss Vanquest AG', 'Работала в Credit Suisse, UBS в Цюрихе, в Bloomberg в Гонконге. Швейцарка с китайскими корнями')
+			+spikerCard('spiker3', 'Иван Соловьев', 'Акселератор TealDance', 'Основатель первого в Китае акселератора для российского бизнеса TealDance')
+			+spikerCard('spiker4', 'Мариан Данко', 'WEHUSTLE', 'Серийный предприниматель, основатель платформы WeHustle и TECOM Conf, ежегодного мероприятия в Китае.')
+			+spikerCard('spiker5', 'Александр Зайнигабдинов', 'China Window Consulting', 'Имеет более чем 15-летний опыт консультирования по различным вопросам международного и китайского права.')
+			+spikerCard('spiker6', 'Кристиан Массет', 'Peak Communication', 'Тренер, speech writer, предприниматель Клиенты: Accenture, HKDTC, TEDx, UOB и тд.')
+			+spikerCard('spiker7', 'Леонид Орлов', 'Бизнес Ассоциация Россия-Гонконг', 'Руководитель представительства Совета по развитию торговли Гонконга в СНГ, исполнительный директор ассоциации')
+			+spikerCard('spiker8', 'Тьери Дельро', 'NetFin Marketing', 'Основатель ведущего в Гонконге маркетингового агенства по предоставлению услуг продвижения на Китай.')
+			+spikerCard('spiker9', 'Дмитрий Сидорин', 'Sidorin Lab', 'Молодой российский предприниматель. Год назад его компания Sidorin Lab открыла филиал в Гонконге')
+		.btn-wrapper
+			button.blue-btn записаться на бесплатную консультацию
