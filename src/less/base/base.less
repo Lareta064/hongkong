@@ -55,7 +55,7 @@ button {
 }
 
 .small-container {
-	width: 36%;
+	width: 50%;
 	.m-auto;
 
 	@media(max-width:1199px) {
@@ -69,26 +69,69 @@ button {
 	}
 }
 
-// .container {
-// 	width: 100%;
-// 	max-width: 1760px;
-// 	padding-left: 15px;
-// 	padding-right: 15px;
-// 	margin: 0 auto;
+#callForm .modal-content {
+	background-color: @red;
 
-// 	@media(min-width: 992px) {
-// 		padding: 0px 25px;
-// 	}
+	button.close {
+		color: #fff;
+		z-index: 5;
+		font-size: 30px;
+		position: absolute;
+		width: 40px;
+		right: 0;
+		top: 0;
+	}
+}
 
-// 	@media(min-width: 1440px) {
-// 		padding: 0px 35px;
-// 	}
+#page-nav {
+	display: none;
+}
 
-// 	@media(min-width: 1920px) {
-// 		padding: 0px;
-// 	}
+@media (min-width: 1200px) {
+	#page-nav {
+		display: block;
+		position: fixed;
+		right: 40px;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+		z-index: 100;
+	}
+}
 
-// }
+@media (min-width: 1440px) {
+	#page-nav {
+		right: 70px;
+	}
+}
+
+
+#page-nav li {
+	width: 12px;
+	height: 12px;
+	background-color: transparent;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	margin-bottom: 8px;
+	border: 2px solid #fff;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+
+#page-nav li a {
+	display: block;
+	height: 100%;
+}
+
+#page-nav li.active {
+	background-color: #fff;
+}
 
 .red-button {
 	text-transform: uppercase;
@@ -137,8 +180,12 @@ button {
 	font-weight: 700;
 	.tr;
 
-	@media(max-width:1199px) {
+	@media(max-width:1440px) {
 		font-size: 18px;
+	}
+
+	@media(max-width:1199px) {
+		font-size: 16px;
 	}
 
 	@media(max-width:767px) {

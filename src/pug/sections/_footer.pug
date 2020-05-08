@@ -1,16 +1,39 @@
-footer.footer
+footer.footer#footer
 	.container
 		.footer-menu
 			nav.header-nav
 				a(href="#header").header-nav-item Главная
-				a(href="#").header-nav-item О курсе
-				a(href="#").header-nav-item Для кого
-				a(href="#").header-nav-item Структура курса
-				a(href="#").header-nav-item Спикеры
-				a(href="#").header-nav-item Стоимость
-				a(href="#").header-nav-item Отзывы
-				a(href="#").header-nav-item Контакты
+				a(href="#course").header-nav-item О курсе
+				a(href="#forWhom").header-nav-item Для кого
+				a(href="#structure").header-nav-item Структура курса
+				a(href="#spikers").header-nav-item Спикеры
+				a(href="#cost").header-nav-item Стоимость
+				a(href="#reviews").header-nav-item Отзывы
+				a(href="#feedback").header-nav-item Контакты
 			a(href="terms-of-use.html" target="_blank").header-nav-item.footer-link Terms-of-use
 		.footer-copyright
 			p По всем вопросам обращаться: olga@hkbusinessschool.com
 			p &copy; 2020 Hong Kong Business school. All rights reserved.
+
+#callForm.modal.fade(tabindex="-1" role="dialog"  aria-hidden="true")
+	.modal-dialog.modal-dialog-centered(role="document")
+		.modal-content
+			.modal-form-title
+				button.close(type="button" data-dismiss="modal" aria-label="Close")
+					span(aria-hidden="true") ×
+			.modal-body
+				.feedback-form
+					form(action="")#contact-form
+						input(type="hidden", name="button-type" value="Бесплатная консультация")
+						p Получить консультацию
+						.form-row
+							input(type="text" name="userName" placeholder="Имя")
+						.form-row
+							input(type="text" name="whatsApp" placeholder="WhatsApp")
+						.form-row
+							input(type="email" name="email" placeholder="E-mail")
+							
+						//- .form-row.form-row-message
+						//- 	textarea(type="text" name="message" rows="2" placeholder="Сообщение")
+						.form-btn
+							input(type="submit" value="Отправить")

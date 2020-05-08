@@ -1,6 +1,22 @@
 extends ../layouts/layout.pug
 
 block content
+	ul#page-nav
+		li.active
+			a(href="#header")
+		li
+			a(href="#course")
+		li
+			a(href="#forWhom")
+		li
+			a(href="#structure")
+		li
+			a(href="#spikers")
+		li
+			a(href="#reviews")
+		li
+			a(href="#feedback")
+			
 	include ../sections/_header.pug
 	include ../sections/_banner.pug
 	include ../sections/_course.pug
