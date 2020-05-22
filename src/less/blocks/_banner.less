@@ -1,12 +1,30 @@
 .header {
-	height: 660px;
-	background: url(../img/bg1.webp);
+	height: 720px;
+	background: url(../img/bg1.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
-	padding-top: 30px;
-	margin-top: 65px;
+	padding-top: 90px;
+	// margin-top: 65px;
+	z-index: 2;
+
+	@media(max-width:1599px) {
+		height: 100vh;
+		max-height: 800px;
+	}
+
+	@media(max-width:767px) {
+
+		min-height: 680px;
+
+	}
+
+	@media(max-width:374px) {
+
+		min-height: 640px;
+
+	}
 }
 
 .header:before {
@@ -38,6 +56,28 @@
 		span {
 			font-size: 30px;
 			display: block;
+		}
+
+		@media(max-width:1439px) {
+			span:first-child {
+				font-size: 34px;
+			}
+
+			span {
+				font-size: 28px;
+
+			}
+		}
+
+		@media(max-width:991px) {
+			span:first-child {
+				font-size: 30px;
+			}
+
+			span {
+				font-size: 26px;
+
+			}
 		}
 
 		@media(max-width:767px) {
@@ -82,10 +122,18 @@
 	z-index: 5;
 	top: 0;
 	left: 0;
+	max-width: 105px;
+	width: 20%;
+
+	@media(max-width:767px) {
+		max-width: 60px;
+
+	}
 }
 
 .header-slogan {
 	margin-top: 25px;
+	// padding-top: 12px;
 	display: flex;
 	align-items: center;
 	max-width: 900px;
@@ -93,6 +141,10 @@
 	border-top: 1px solid #fff;
 	font-size: 22px;
 	font-weight: 700;
+
+	@media(max-width:1199px) {
+		padding-top: 12px;
+	}
 
 	@media(max-width:767px) {
 		display: block;
@@ -164,13 +216,13 @@
 	}
 }
 
-.logo-img-desk {
-	display: block;
+// .logo-img-desk {
+// 	display: block;
 
-	@media(max-width:767px) {
-		display: none;
-	}
-}
+// 	@media(max-width:767px) {
+// 		display: none;
+// 	}
+// }
 
 .logo-img-mob {
 	display: none;
@@ -197,10 +249,10 @@
 	justify-content: center;
 	align-items: center;
 
-	@media(max-width:767px) {
-		width: 50%;
-		flex-direction: column;
-	}
+	// @media(max-width:767px) {
+	// 	width: 50%;
+	// 	flex-direction: column;
+	// }
 }
 
 .col-50--border {
@@ -223,5 +275,39 @@
 
 	@media(max-width:767px) {
 		display: block;
+	}
+}
+
+.col-string {
+	display: flex;
+
+	p:first-child {
+		margin-right: 8px;
+	}
+}
+
+.col-string--link a {
+	position: relative;
+	color: #fff;
+	display: inline-block;
+	.tr;
+
+	@media(max-width:767px) {
+		display: none;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		left: -2px;
+		width: 101%;
+		height: 1px;
+		background-color: #fff;
+		bottom: 0px;
+		.tr;
+	}
+
+	&:hover:after {
+		width: 0;
 	}
 }

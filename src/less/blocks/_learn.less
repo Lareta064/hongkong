@@ -1,9 +1,5 @@
 .structure {
 	position: relative;
-	// padding-bottom: 100px;
-	// background-color: @blue;
-
-
 }
 
 .structure:before {
@@ -26,6 +22,8 @@
 	transform: translateX(-50%);
 	z-index: 8;
 	max-width: 1080px;
+	padding-top: 66px;
+
 
 	.m-auto;
 
@@ -44,6 +42,14 @@
 
 	@media(max-width:767px) {
 		max-width: 500px;
+	}
+
+	@media(max-width:579px) {
+		max-width: 390px;
+	}
+
+	@media(max-width:424px) {
+		max-width: 304px;
 	}
 }
 
@@ -111,7 +117,7 @@
 
 .parallax {
 	background-image: url("../img/structure.jpg");
-	min-height: 1060px;
+	min-height: 1115px;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -121,7 +127,7 @@
 
 	@media(max-width:767px) {
 		background-repeat: repeat;
-		height: 1380px;
+		height: 1435px;
 	}
 
 	// @media(max-width:579px) {
@@ -129,13 +135,13 @@
 	// 	height: 1400px;
 	// }
 
-	@media(max-width:424px) {
+	@media(max-width:579px) {
 		background-repeat: repeat;
-		height: 1450px;
+		height: 1540px;
 	}
 
-	@media(max-width:369px) {
+	@media(max-width:424px) {
 		background-repeat: repeat;
-		height: 1660px;
+		height: 1715px;
 	}
 }

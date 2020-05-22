@@ -1,17 +1,24 @@
 .cost {
 	background-color: @blue;
-	padding-top: 60px;
+	padding-top: 66px;
+
 
 
 	h2 {
 		padding-bottom: 10px;
 		border-bottom: 1px solid #fff;
-		max-width: 800px;
+		max-width: 960px;
 		text-align: left;
 		padding-left: 30px;
 		.m-auto;
 		margin-bottom: 20px;
 	}
+}
+
+.cost-block {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .cost-content {
@@ -122,10 +129,10 @@
 }
 
 .cost-sale {
-	max-width: 340px;
+	max-width: 450px;
 	width: 100%;
 	padding-top: 20px;
-	height: 235px;
+	height: 350px;
 	background-color: rgba(232, 74, 67, 1);
 	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
@@ -136,11 +143,23 @@
 	text-align: center;
 
 	p {
-		font-size: 22px;
+		font-size: 24px;
 		line-height: 1.4;
 		font-weight: 700;
-		max-width: 250px;
+		max-width: 300px;
 		margin-bottom: 15px;
+
+		span {
+			font-size: 30px;
+		}
+
+		@media(max-width:991px) {
+			font-size: 22px;
+
+			span {
+				font-size: 24px;
+			}
+		}
 	}
 
 	@media(max-width: 767px) {
